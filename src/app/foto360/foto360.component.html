@@ -1,0 +1,22 @@
+<div class="pano" #myPanoViewer id='foto360tag'>
+    <div class="fullcontainer">
+        <div class="selectorbox" (click)="onClick()">
+            
+            <div [class]="overgray"></div>
+                
+            <div [class]="clicdrag">
+                <img id="arr" src="../../assets/52-526018_how-to-set-use-cursor-drag-arrow-icon.png">
+                <span>Clic y arrastra para rotar</span>
+            </div>
+            
+            <div class="previewsbox">
+            <div *ngFor="let pic of pics" (click)="onSelect(pic)">
+                <div class="preview"><img src="{{pic.imagen}}" class="imgResponsive"></div>
+            </div>  
+            </div>
+            <div class="local" [innerHTML]="descripcion">
+            </div>
+
+        </div> 
+    </div>
+  </div>

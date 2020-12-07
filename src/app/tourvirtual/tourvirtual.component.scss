@@ -1,0 +1,130 @@
+@-ms-viewport { width: device-width; }
+			@media only screen and (min-device-width: 800px) { html { overflow:hidden; } }
+			* { padding: 0; margin: 0; }
+			html { height: 100%; }
+			body { height: 100%; overflow:hidden; }
+			div#container { height: 100%; min-height: 100%; width: 100%; margin: 0 auto; }
+			div#tourDIV {
+				height:100%;
+				position:relative;
+				overflow:hidden;
+			}
+			div#panoDIV {
+				height:100%;
+				position:relative;
+				overflow:hidden;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+			}
+
+.universe2{
+	height: 85vh; 
+    width: auto; 
+    background-color: black;
+    background-image: url("../../assets/universe2.jpg");
+    background-position: bottom;
+    background-attachment: fixed;  
+}
+
+.cajanegra{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    transition: 0.3s;   
+}
+.cajanegra:hover{
+	background-color: rgba(0, 0, 0, 0.603);
+}
+
+.title{
+    z-index: 399;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin-top: 0;
+}
+
+.titleblack {
+    z-index: 400;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 9px;
+    margin: 0px 0px ;
+    color: whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.3s;    
+}
+
+.titleorange {
+    z-index: 400;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 9px;
+    margin: 0px 0px;
+    color: rgb(255, 151, 53);
+    width: fit-content;
+    height: fit-content;    
+}
+
+.info360{
+    margin-left: 2vw;
+       
+}
+
+h3{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 250;
+    text-shadow: 0 0 0.25vw rgba(0,0,0,0.5);
+    text-align: left;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h4{
+    color: whitesmoke;
+    font-size: 1.2vw;
+    font-weight: 200;
+    margin: 5px 0px;
+}
+
+p{
+    font-weight: 100;
+    font-size: 0.9vw;
+}
+
+.prevbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.prev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 40px;
+    color: white;
+	z-index: 600;
+    cursor: pointer;
+    align-self: center;
+}
+
+.prevbox{
+
+    height: 20vh;
+    width: auto;
+    margin-top: 9px;
+}
+

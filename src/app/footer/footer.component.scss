@@ -1,0 +1,30 @@
+.foot{
+    min-height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: black;
+    color: rgb(194, 194, 194);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 150;
+    justify-content: space-evenly;
+}
+
+.litem{
+    justify-self: center;
+    cursor: pointer;
+}
+
+.litem:hover{
+    text-decoration: underline;
+}
+
+h3{
+    font-size: 1.2vw;
+    margin: 10px 0px;
+}
+
+p{
+    font-size: 1vw;
+    font-weight: 150;
+    margin: 3px 0px;
+}

@@ -1,0 +1,85 @@
+.block{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    justify-items: center;
+    position: static;
+
+}
+
+.form-group{
+    
+    height: 100px;
+    width: 100px;
+}
+
+.lista{
+    width: 600px;
+    align-self: center;
+   
+}
+
+.listbox{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: gray;
+    margin: 4px 0px;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+span{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.funciones{
+    align-self: center;
+}
+
+p{
+    margin-left: 10px;
+}
+
+.linkbox0{
+    opacity: 0;
+}
+
+.linkbox{
+    background-color: rgb(77, 76, 76);
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    opacity: 1;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    margin-top: 50vh;
+}
+
+.statusDeSubida0{
+    opacity: 0;
+}
+
+.statusDeSubida{
+    background-color: rgb(77, 76, 76);
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    opacity: 1;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    margin-top: 50vh;
+}

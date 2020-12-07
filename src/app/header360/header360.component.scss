@@ -1,0 +1,118 @@
+.universe{
+    height: 80vh; 
+    width: auto; 
+    background-color: black;
+    background-image: url("../../assets/universe.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed; 
+    z-index: -10;  
+}
+
+
+
+.cajanegra{
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    transition: 0.3s;   
+}
+.cajanegra:hover{
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.title{
+    z-index: 399;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin-top: 10vh;
+}
+
+.titleblack {
+    z-index: 400;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 9px;
+    margin: 6px 0px ;
+    color: whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.3s;    
+}
+
+.titleorange {
+    z-index: 400;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    padding: 0px 9px;
+    margin: 6px 0px;
+    color: rgb(255, 151, 53);
+    width: fit-content;
+    height: fit-content;    
+}
+
+.info360{
+    margin-left: 2vw;   
+}
+
+h3{
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 250;
+    text-shadow: 0 0 0.25vw rgba(0,0,0,0.5);
+    text-align: left;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h4{
+    color: whitesmoke;
+    font-size: 1.4vw;
+    font-weight: 150;
+}
+
+.downarrow{ 
+    align-self: center;
+    width: 55px;
+    height: 70px;
+    filter: invert(100%);
+    z-index: 400; 
+    cursor: pointer;  
+}
+
+#flechita{
+    position: relative;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: pulse;
+}
+
+@keyframes pulse{
+    0% {padding-top: 0px;}
+    50% {padding-top: 15px;}
+}
+
+@media (max-width: 600px) {
+    .universe{
+        background-attachment:initial;
+        background-size:cover;
+
+    }
+}
+
+@media (min-width: 601px) AND (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

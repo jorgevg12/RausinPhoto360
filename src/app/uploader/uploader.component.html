@@ -1,0 +1,27 @@
+<div class="block">
+    <h1>Tour Uploader</h1>
+    <div class="form-group">
+        <label>Archivo...</label>
+        <input type="file" (change)="fileChangeEvent($event)">
+
+        <div (click)="uploadFileToActivity()">Subir</div>
+    </div>
+    <div class="lista" *ngFor="let item of listTours">
+        <div class="listbox">
+            <p> {{item}} </p>
+            <div></div>
+            <div class="funciones">
+                <span (click)="linkGen(item)">Link</span>
+                <span (click)="embedTour(item)">Embed</span>
+                <span (click)="deleteTour(item)">Borrar</span></div>
+        </div>
+    </div>
+    <div [class]="linkbox">
+        <h3>El link del tour es:</h3>
+        <p>{{link}}</p>
+        <button type="button" name="Cerrar" (click)="closeLink()">Cerrar</button>
+    </div>
+    <div [class]="statusDeSubida">
+        <p>{{statusSubida}}</p>
+    </div> 
+</div>
