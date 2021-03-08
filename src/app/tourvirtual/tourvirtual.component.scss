@@ -22,7 +22,7 @@
 
 .universe2{
 	height: 85vh; 
-    width: auto; 
+    width: 100vw; 
     background-color: black;
     background-image: url("../../assets/universe2.jpg");
     background-position: bottom;
@@ -108,6 +108,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100vw;
 }
 
 .prev{
@@ -121,10 +122,13 @@ p{
     align-self: center;
 }
 
-.prevbox{
-
+.prevImg{
     height: 20vh;
-    width: auto;
     margin-top: 9px;
 }
 
+@media (max-width: 600px) {
+    .prevbox{
+        flex-direction: column;
+    }
+}
